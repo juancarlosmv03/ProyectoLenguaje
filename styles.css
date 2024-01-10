@@ -1,0 +1,99 @@
+/*CODIGO DE JUAN CARLOS*/
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    height: 35px;
+    width: 35px;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+}
+.iconos{
+    margin: 0px 50px 0px 0px;
+    color: white;
+}
+.navegador{
+    padding: 0px;
+}
+nav li{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav img{
+    justify-content: flex-end;
+    height: 35px;
+    width: 35px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+}
+.logo img{
+    width: 500px;
+    height: 100px;
+    padding: 0px 0px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enlaces{
+    display: none;
+}
+.position{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.slider{
+    background-image: url(sources/Galaxy-S23jpg.jpg);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    border-radius:10px;
+    animation: animate 30s infinite;
+}
+.slider-container{
+    position:relative;
+}
+
+@keyframes animate{
+    50%{
+        background-image: url(sources/13proxiaomi.webp);
+        background-size:cover;
+    }
+    100%{
+        background-image: url(sources/iphone.jpg);
+        background-size: cover;
+    }
+}
+
+.products{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.products2{
+    width: 33%;
+    height: 50%;
+    text-align: center;
+}
+.products2 img{
+    width: 98%;
+    height: 50%;
+}
+
+/*CÓDIGO DE MÁXIMO*/
