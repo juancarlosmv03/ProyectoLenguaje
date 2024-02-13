@@ -1,7 +1,9 @@
 /*CODIGO DE JUAN CARLOS*/
-body{
+html,body{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 img{
     height: 35px;
@@ -10,23 +12,25 @@ img{
 nav{
     width: 100%;
     height: 70px;
-    padding: 10px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:white;
 }
 .iconos{
-    margin: 0px 50px 0px 0px;
+    margin: 0px 20px 0px 0px;
     color: white;
 }
 .navegador{
     padding: 0px;
+    position:sticky;
 }
+
 nav li{
     display: inline;
     list-style: none;
     text-decoration: none;
+    position: sticky;
 }
 
 nav img{
@@ -37,11 +41,12 @@ nav img{
 .menu{
     display: flex;
     justify-content: flex-start;
+    margin: 20px;
 }
 .logo img{
-    width: 500px;
-    height: 100px;
-    padding: 0px 0px 0px 50px;
+    width: 200px;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +60,16 @@ nav img{
     height: 100%;
     
 }
+.menu svg:hover li{
+    display: inline;
+}
 .slider{
     background-image: url(sources/Galaxy-S23jpg.jpg);
     background-size: cover;
     height: 50vh;
     width: 100%;
     border-radius:10px;
-    animation: animate 30s infinite;
+    animation: animate 50s  infinite;
 }
 .slider-container{
     position:relative;
@@ -79,21 +87,135 @@ nav img{
 }
 
 .products{
+    /*margin: 50px ;*/
+    padding: 50px;
     display: flex;
     position: relative;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     
 }
 
 .products2{
-    width: 33%;
-    height: 50%;
+    width: 33.33%;
+    height: auto;
+    margin: 0px;
+    justify-content: space-around;
     text-align: center;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.4);
 }
 .products2 img{
-    width: 98%;
-    height: 50%;
+    width: 300px;
+    height: auto;
+}
+.price{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.button{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 5px black;
+    padding: 10px;
+    width: 20%;
+    text-decoration: none;
+}
+.divbut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.button a{
+    text-decoration: none;
+    color:white;
+    
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0px;
+}
+.texto{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.barra {
+    width: 40%;
+    margin: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.barra2 {
+    width: 40%;
+    margin: 50px;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+@keyframes barras{
+    from  {width: 0%;}
+    to {width: 100%;}
+}
+@keyframes barras2{
+    from  {width: 100%;}
+    to {width: 0%;}
+}
+.relleno {
+    height: 10px;
+    width: auto;
+    background-color: black;
+    animation: barras 2s forwards ease-out;
+}
+.relleno2 {
+    height: 10px;
+    width: auto;
+    background-color: white;
+    animation: barras2 2s forwards ease-in;
+}
+
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+.footercol{
+    padding: 20px 20px 0px 20px;
+    color: white;
+    width: 33%;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footercol a {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.iconored{
+    display:inline-block;
+}
+.subfooter p{
+    display:flex;
+    justify-content: flex-end;
+    width: auto;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background-color: rgb(31, 31, 31);
 }
 
 /*CÓDIGO DE MÁXIMO*/
